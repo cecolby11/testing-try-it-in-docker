@@ -1,7 +1,8 @@
 version: '3'
 services:
   web:
-    build: https://github.com/cecolby11/testing-try-it-in-docker.git
+    context: .
+    build: Dockerfile
     ports:
      - "5000:5000"
   redis:
